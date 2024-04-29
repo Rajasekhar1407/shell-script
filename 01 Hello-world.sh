@@ -4,7 +4,7 @@
 
 intro=Mahesh # there should be no space between variable and value
 
-echo "movie hero $intro
+echo "movie hero $intro"
 
 if ($? ne 0)
 while
