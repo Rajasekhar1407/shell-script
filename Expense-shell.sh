@@ -5,21 +5,26 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOGFILE=$SCRIPT_NAME-$TIMESTAMP
 
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
+
+
 if [ $USERID -ne 0 ]
 then
-    echo "Please run the script with root access"
+    echo "$R Please run the script with root access $N"
     exit 1
 else
-    echo "You are Super User"
+    echo "$G You are Super User $N"
 fi
 
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo "$2...FAILED"
+        echo "$2...$R FAILED $N"
         exit 1
     else
-        echo "$2...SUCCESS"
+        echo "$2...$G SUCCESS $N"
     fi
 }
 
