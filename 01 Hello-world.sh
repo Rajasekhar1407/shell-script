@@ -6,8 +6,9 @@ intro=Mahesh # there should be no space between variable and value
 
 echo "movie hero $intro"
 
-if ($? ne 0)
-while
+if ( $? ne 0 )
+then
     echo "command is ...SUCCESS"
 else
-    echo " command is ...FAILURE"
+    echo "command is ...FAILURE"
+fi
