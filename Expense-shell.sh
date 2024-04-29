@@ -12,19 +12,19 @@ N="\e[0m"
 
 if [ $USERID -ne 0 ]
 then
-    echo "$R Please run the script with root access $N"
+    echo -e "$R Please run the script with root access $N"
     exit 1
 else
-    echo "$G You are Super User $N"
+    echo -e "$G You are Super User $N"
 fi
 
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo "$2...$R FAILED $N"
+        echo -e "$2...$R FAILED $N"
         exit 1
     else
-        echo "$2...$G SUCCESS $N"
+        echo -e "$2...$G SUCCESS $N"
     fi
 }
 
