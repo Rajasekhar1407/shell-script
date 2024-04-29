@@ -1,4 +1,6 @@
-** Hi, I am learning AWS DevOps
+#!/bin/bash
+
+# Hi, I am learning AWS DevOps
 
 intro = Mahesh
 
