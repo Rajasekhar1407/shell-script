@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#declaring variables from command line
 Person1=$1
 Person2=$2
 
